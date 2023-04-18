@@ -1,5 +1,3 @@
-let cellSize = 35;
-
 let width = 10;
 let height = 24;
 
@@ -17,6 +15,10 @@ function setup() {
     color(176, 87,  194),
     color(194, 87,  87)
   ];
+
+  let cellSize = (window.innerHeight - 100) / height;
+
+  console.log(cellSize);
 
   board = new Board(width, height, cellSize, colors);
 
